@@ -1,0 +1,21 @@
+ext {
+
+    //
+    appcompatVersion = '1.4.1'
+    materialVersion = '1.6.0'
+    constraintlayoutVersion = '2.1.4'
+    //
+    mlkitTextRecognitionVersion = '18.0.0'
+    faceDetectionVersion = '16.1.5'
+
+    MLkitDependencies = [
+            textRecognition:"com.google.android.gms:play-services-mlkit-text-recognition:${mlkitTextRecognitionVersion}",
+            faceDetection:"com.google.mlkit:face-detection:${faceDetectionVersion}"
+    ]
+
+    UIDependencies = [
+            appcompat : "androidx.appcompat:appcompat:${appcompatVersion}",
+            material :"com.google.android.material:material:${materialVersion}",
+            constraintlayout : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}"
+    ]
+}
